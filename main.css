@@ -1,0 +1,126 @@
+body{
+    background-color: #eee;
+    font-family: Roboto,arial,sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.headerindex{
+    justify-items: center;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.title {
+    font-family: 'Indie Flower', cursive;
+    font-size: 4vw;
+    font-weight: bold;
+    color: #4169FF;
+    text-align: center;
+    margin-top: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); 
+    -webkit-text-stroke: 1px #4189ff;
+    text-stroke: 2px #fff;
+}
+ 
+.logoindex{
+    max-width: 100%;
+}
+
+main{
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+    justify-items: center;
+}
+
+.botonindex{
+    background-color: #4169FF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px;
+    opacity: 0.9;
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+    cursor: pointer;
+    border-radius: 2%;
+    height: 100%;
+    width: 85%;
+    font-size: 2vw;
+}
+
+.botonindex:hover{
+    transform: translatey(-20px);
+    -webkit-transform: translatey(-20px);
+    -moz-transform: translatey(-20px);
+}
+     
+.bolsatrabajo{
+    max-width: 100%;
+}
+
+.quienessomos{
+    color: white;
+    background: linear-gradient(to top, #4169FF  60%, rgba(255,255,255,0) 100%);
+    width: 90%;
+    padding: 5%;
+    margin-top: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.headerindex{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-items: center;
+    margin-top: 5%;
+}
+
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fotos/montaña.jpg');
+    background-size: cover;
+    background-position: center center;
+    opacity: 1;
+    z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+    .fondo {
+      transition: opacity 0.85s ease-out;
+    }
+  
+    .fondo.desvanecer {
+      opacity: 0.8;
+    }
+}
+
+footer{
+    color: white;
+    background-color: rgba(57, 77, 102, 0.973);
+    width: 100%;
+    height: 15%;
+    margin-top: auto;
+    text-align: center;
+    margin: 0%;
+    font-size: 1vw;
+}
